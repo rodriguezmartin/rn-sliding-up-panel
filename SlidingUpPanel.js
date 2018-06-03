@@ -14,7 +14,7 @@ const MINIMUM_VELOCITY_THRESHOLD = 0.1
 
 const MINIMUM_DISTANCE_THRESHOLD = 0.24
 
-const DEFAULT_SLIDING_DURATION = 240
+const DEFAULT_SLIDING_DURATION = 200
 
 class SlidingUpPanel extends React.Component {
   static propTypes = {
@@ -253,7 +253,7 @@ class SlidingUpPanel extends React.Component {
 
     const backdropOpacity = this._translateYAnimation.interpolate({
       inputRange: [-top, -bottom],
-      outputRange: [0.75, 0],
+      outputRange: [0.4, 0],
       extrapolate: 'clamp'
     })
 
